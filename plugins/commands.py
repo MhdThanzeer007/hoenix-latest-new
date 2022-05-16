@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/WPM_OTT')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -61,7 +61,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 𝐉𝐨𝐢𝐧 𝐔𝐩𝐝𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=invite_link.invite_link
+                    "➡️ 𝗝𝗢𝗜𝗡 𝗠𝗬 𝗠𝗔𝗜𝗡 𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=invite_link.invite_link
                 )
             ]
         ]
@@ -70,9 +70,9 @@ async def start(client, message):
             try:
             	kk, file_id = message.command[1].split("_", 1)
             	pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            	btn.append([InlineKeyboardButton(" 🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧", callback_data=f"{pre}#{file_id}")])
+            	btn.append([InlineKeyboardButton(" ♻️ 𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍 𝐓𝐎 𝐀𝐂𝐂𝐄𝐒𝐒 ♻️", callback_data=f"{pre}#{file_id}")])
             except IndexError:
-                btn.append([InlineKeyboardButton(" 🔄 𝐓𝐫𝐲 𝐀𝐠𝐚𝐢𝐧", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
+                btn.append([InlineKeyboardButton(" ♻️ 𝐓𝐑𝐘 𝐀𝐆𝐀𝐈𝐍 𝐓𝐎 𝐀𝐂𝐂𝐄𝐒𝐒 ♻️", url=f"https://t.me/{temp.U_NAME}/{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**⚠️ YOU ARE NOT SUBSCRIBED OUR CHANNEL ⚠️\n\n🤗 JOIN ON OUR CHANNEL AND CLICK TRY AGAIN BUTTON TO GET MOVIE✅\n\n⚠️ താങ്കൾ ഞങ്ങളുടെ ചാനൽ സബ്സ്ക്രൈബ് ചെയ്തിട്ട് ഇല്ല!! ⚠️\n\n🤗 ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ചെയ്യിതിട്ടു Try Again Button Click ചെയ്യുമ്പോൾ movie കിട്ടും✅\n👇👇👇👇👇👇👇👇👇👇👇**",
@@ -129,7 +129,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                   reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/Cinemahub182") ] ] ),
+                   reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ ᴊᴏɪɴ ɢʀᴏᴜᴘ ⚡", url="https://t.me/wolfpackmedia") ] ] ),
         
                     protect_content=msg.get('protect', False)
                     )
@@ -234,10 +234,10 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/Cinemahub182"),
-                                              InlineKeyboardButton("💥ꜱʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/Cinemahub182") ],
-                                            [ InlineKeyboardButton("❤️‍🔥 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ❤️‍🔥", url="https://t.me/+hJuZhC7fSqUyZWM1")],
-                                            [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="https://telegra.ph/httpstelegraphfilee908cfc0d08e47ca337ecjpg-01-06") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/wolfpackmedia"),
+                                              InlineKeyboardButton("💥ꜱʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/wolfpackmedia") ],
+                                            [ InlineKeyboardButton("❤️‍🔥 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ❤️‍🔥", url="https://t.me/+sJ2hIrCJ3XU3MzJl")],
+                                            [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="http://www.opensubtitles.org/") ] ] ),
         
         protect_content=True if pre == 'filep' else False
         )
