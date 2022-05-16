@@ -150,7 +150,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit("<b><i>Movie Not available Reason\n\n1)O.T.T Or DVD Not Released\n\n2)Type Name With Year\n\n3)Movie Is Not Available in the database Request to Admins\n\nMovie Request Format:-\n#Request Moviename Year\n\nSeries Request Format:-\n#Request Seriesname Year</i></b>")
+            k = await query.message.edit("<b><i>Movie Not available Reason\n\n1)O.T.T Or DVD Not Released\n\n2)Type Name With Year\n\n3)Movie Is Not Available in the database Request to Admins\n\nMovie Request Format:-\n@admins Moviename Year</i></b>")
             await asyncio.sleep(35)
             await k.delete()
  
@@ -378,7 +378,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('𝐂𝐡𝐞𝐜𝐤 𝐏𝐦. 𝐈 𝐇𝐚𝐯𝐞 𝐒𝐞𝐧𝐭 𝐅𝐢𝐥𝐞𝐬 𝐈𝐧 𝐏𝐌\n\nമൂവി നിങ്ങൾക് personal ആയി അയച്ചു', show_alert=True)
+                await query.answer('𝐂𝐡𝐞𝐜𝐤 𝐏𝐦. 𝐈 𝐇𝐚𝐯𝐞 𝐒𝐞𝐧𝐭 𝐅𝐢𝐥𝐞𝐬 𝐈𝐧 𝐏𝐌\n\nമൂവി നിങ്ങൾക് Personal ആയി അയച്ചു', show_alert=True)
         except UserIsBlocked:
             await query.answer('Start the bot first mahn !', show_alert=True)
         except PeerIdInvalid:
